@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Basic Portfolio Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Portfolio Contact Form</h3>
+      <form action="#" name="contact_form" id="contact_form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required placeholder="Rishabh" />
+        <br />
+        <label for="email">Email</label>
+        <input
+          name="email"
+          id="email"
+          type="email"
+          required
+          placeholder="rishabhkeshan@gmail.com"
+        />
+        <br />
+        <label for="phone_number">Phone No.</label>
+        <input
+          name="phone_number"
+          id="phone"
+          type="text"
+          required
+          placeholder="+918820754801(Do not BombItUp)"
+        />
+        <br />
+        <label for="message">Message</label><br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          placeholder="Enter your message here..."
+        ></textarea>
+        <div class="center">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+      <p id="form-status"></p>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
